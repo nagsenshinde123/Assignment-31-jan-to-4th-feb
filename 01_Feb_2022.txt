@@ -1,0 +1,88 @@
+Q.1) WAP to caluclate no. of digits in a number entered by user.
+
+      import java.util.Scanner;
+
+      public class Calculate_No_Digits {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any Number : ");
+		long num = sc.nextLong();
+		long count = 0;
+		
+		while(num>0) {
+			 num = num / 10;
+			count++;
+			
+		}
+		System.out.println("No. Of Digits present in a Number = "+count);
+
+	}
+
+}
+/**************************************************************************************************************/
+Q.2) Apply do while loop to calculat factorial of a number such that, program asks  user, if he wants to continue, 
+if yes, program should run again.
+
+    import java.util.Scanner;
+
+    public class Factorial {
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter user input : ");
+		String user = sc.nextLine();
+                String yes = user;
+		do {		
+			System.out.println("Enter any Number : ");
+			int num = sc.nextInt();
+			//String user = sc.nextLine();
+			int fact = 1;
+			for(int i=1; i<=num; i++) {
+				fact = fact * i;
+				System.out.println(fact);
+			}
+			
+		}		
+		while(user == yes );
+				
+	}
+
+}
+
+   
+/**************************************************************************************************************/
+WAP to creat a fuction that check if no. is odd or even. call this function from main method"
+    
+     import java.util.Scanner;
+
+public class Solutoin {
+	public static int Check_Even_Odd(int n) {
+		if(n % 2 == 0) {
+			System.out.println(" Even Number ! ");
+			return n;
+		}
+		else {
+			System.out.println(" Odd Number ! ");
+			return n;
+		}
+		
+	}
+	
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter value of n : ");
+		int n = sc.nextInt();
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		//int print = Check_Even_Odd(n);
+		System.out.println(Check_Even_Odd(n));
+		System.out.println(Check_Even_Odd(n1));
+		System.out.println(Check_Even_Odd(n2));
+				
+	}
+
+}
+/**************************************************************************************************************/
